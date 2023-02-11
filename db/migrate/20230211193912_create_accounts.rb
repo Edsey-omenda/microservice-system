@@ -4,7 +4,7 @@ class CreateAccounts < ActiveRecord::Migration[7.0]
       t.integer :account_number
       t.string :customer_name
       t.integer :debit_Cnumber
-      t.string :credit_Cnumber
+      t.integer :credit_Cnumber
       t.string :account_type
       t.integer :amount
       t.references :customer, null: false, foreign_key:true
