@@ -52,3 +52,9 @@ test:
   username: james
   password:
   timeout: 5000
+
+
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
