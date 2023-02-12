@@ -10,10 +10,7 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
-
-#postgress gem for pg database
-gem 'pg'
+gem "sqlite3", "~> 1.4"
 
 #serializer gem
 gem 'active_model_serializers', '~> 0.10.2'
