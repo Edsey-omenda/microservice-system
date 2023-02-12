@@ -1,24 +1,17 @@
-# README
+# Microservice system
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## This is a RESTFUL microservice program that will perform database operation to create CUSTOMER and create customer ACCOUNT.
 
-Things you may want to cover:
+THe system has two main models that form one to many relationship:
 
-* Ruby version
+* Customer
+  A customer has many accounts.
+  A customer has multiple credit/debit card numbers.
+  A customer can be created with specific attrubutes and related to an account that solely belongs to that customer
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Account
+  An account belongs to a customer.
+  An account can be created and is related to a customer(new or existing one)
+  Account can be topped up  and withrawal made via the amount attribute.(OPeration managed by the updated method in the account controller).
 
 * ...
