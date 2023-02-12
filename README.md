@@ -2,16 +2,18 @@
 
 ## This is a RESTFUL microservice program that will perform database operation to create CUSTOMER and create customer ACCOUNT.
 
-THe system has two main models that form one to many relationship:
+The system has two main models that form one to many relationship:
 
-* Customer
-  A customer has many accounts.
-  A customer has multiple credit/debit card numbers.
-  A customer can be created with specific attrubutes and related to an account that solely belongs to that customer
+## Customer
+*  A customer has many accounts.
+*  A customer has multiple credit/debit card numbers.
+*  A customer can be created with specific attrubutes and related to an account that solely belongs to that customer.
 
-* Account
-  An account belongs to a customer.
-  An account can be created and is related to a customer(new or existing one)
-  Account can be topped up  and withrawal made via the amount attribute.(OPeration managed by the updated method in the account controller).
+## Account.
+*  An account belongs to a customer.
+*  An account can be created and is related to a customer(new or existing one)
+*  Account can be topped up  and withrawal made via the amount attribute.(OPeration managed by the updated method in the account controller).
 
-* ...
+## Technologies used
+* Ruby on rails.
+* Sqlite3.
